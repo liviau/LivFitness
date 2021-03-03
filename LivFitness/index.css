@@ -1,0 +1,74 @@
+.horizontal-menu{
+    background-color: #000;
+    text-align: right;
+    height: 46px;
+}
+.horizontal-menu > ul{
+    font-size: 0;
+    float: right;
+    height: 77px;
+}
+.horizontal-menu > ul > li{
+    display: inline-block;
+    font-size: 12px;
+    font-family: 'helvetica';
+    padding-right: 18px;
+    padding-left: 18px;
+    text-transform: uppercase;
+    position: relative;
+    height: calc(100% - 10px);
+    top: 10px;
+    cursor: pointer;
+}
+.horizontal-menu > ul > li i{
+    font-size: 5px;
+    margin-left: 5px;
+    vertical-align: text-top;
+
+}
+.horizontal-menu > ul > li a{
+    color: #fff;
+}
+.horizontal-menu > ul > li:hover > a,
+.horizontal-menu > ul > li .sub-menu li:hover a{
+    color: red !important;
+}
+.horizontal-menu > img{
+    max-height: 44px;
+    width: auto;
+}
+.horizontal-menu.type1 > ul > li .sub-menu{
+    border: 0;
+    text-align: left;
+    padding: 28px 25px!important;
+    border-radius: 0;
+    
+    min-width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: orange;
+    position: absolute;
+    top: 67px;
+    left: 50%;
+    transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    min-width: 132px;
+    display: none;
+}
+.horizontal-menu.type1  > ul > li:hover .sub-menu{
+    display: block;
+}
+.horizontal-menu.type1 > ul > li .sub-menu li a{
+    color: white;
+    font-family: "helvetica";
+    text-transform: none;
+    padding-bottom: 20px;
+    display: block;
+}
+.horizontal-menu.type1 > ul > li .sub-menu li:last-child a{
+    padding-bottom: 0px;
+}
+
